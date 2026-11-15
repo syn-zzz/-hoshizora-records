@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+
+  <title>ほしぞらレコード｜夢見市・夢見通りの中古レコード店</title>
+  <meta name="description" content="夢見市・夢見通りにある中古レコード店ほしぞらレコード。オールジャンルのアナログレコードを、試聴しながらゆっくり選べます。見るだけでも大歓迎。レコードプレーヤーや持ち運び用バッグも販売。ご自宅に眠るレコードの買取も行っています。">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/webp" href="images/logo-icon-192.webp">
+
+  <!-- OGP -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ほしぞらレコード｜夢見市・夢見通りの中古レコード店">
+  <meta property="og:description" content="夢見市観光のついでに、ほしい一枚を探しに。オールジャンル・試聴OKの中古レコード店です。買取も受け付けています。">
+  <meta property="og:image" content="/images/logo-icon-192.webp">
+
+  <!-- Google Fonts: Shippori Mincho B1（500,600,700）・Zen Kaku Gothic New（400,700）のみ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap"></noscript>
+
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       ヘッダー（CONTENTS.md 1章）
+       ============================================================ -->
+  <header class="hr-header" role="banner">
+    <div class="hr-container">
+
+      <!-- メインバー（高さ 72px） -->
+      <div class="hr-header__inner">
+
+        <!-- ロゴ（文字＋アイコン） -->
+        <a href="./" class="hr-header__logo" aria-label="ほしぞらレコード トップページへ">
+          <span class="hr-header__logo-text">ほしぞらレコード</span>
+          <img class="hr-header__logo-icon"
+               src="images/logo-icon-96.webp"
+               srcset="images/logo-icon-96.webp 1x, images/logo-icon-192.webp 2x"
+               width="40" height="40" alt="">
+        </a>
+
+        <!-- 右エリア -->
+        <div class="hr-header__right">
+
+          <!-- デスクトップ（960px+）：ナビ行 -->
+          <div class="hr-header__nav-row">
+            <nav class="hr-nav" aria-label="グローバルナビゲーション">
+              <ul class="hr-nav__list" role="list">
+                <li><a href="./"            class="hr-nav__link" aria-current="page">ホーム</a></li>
+                <li><a href="first-time/" class="hr-nav__link">はじめての方へ</a></li>
+                <li><a href="news/"       class="hr-nav__link">入荷情報</a></li>
+                <li><a href="calendar/"   class="hr-nav__link">営業日</a></li>
+                <li><a href="access/"     class="hr-nav__link">アクセス</a></li>
+                <li><a href="contact/"    class="hr-nav__link">お問い合わせ</a></li>
+              </ul>
+            </nav>
+            <a href="contact/?type=buyback"
+               class="hr-btn hr-btn--secondary hr-header__cta">
+              買取を相談する
+            </a>
+          </div>
+
+          <!-- モバイル・タブレット（〜959px）：CTAボタン＋ハンバーガー -->
+          <div class="hr-header__mobile-controls">
+            <a href="contact/?type=buyback"
+               class="hr-btn hr-btn--secondary hr-header__cta">
+              買取を相談する
+            </a>
+            <button type="button"
+                    class="hr-hamburger"
+                    id="hr-hamburger-btn"
+                    aria-expanded="false"
+                    aria-controls="hr-drawer"
+                    aria-label="メニューを開く">
+              <span class="hr-hamburger__bar" aria-hidden="true"></span>
+              <span class="hr-hamburger__bar" aria-hidden="true"></span>
+              <span class="hr-hamburger__bar" aria-hidden="true"></span>
+            </button>
+          </div>
+
+        </div><!-- /.hr-header__right -->
+      </div><!-- /.hr-header__inner -->
+
+      <!-- 営業時間バー（全サイズ表示） -->
+      <div class="hr-header__hours-bar" aria-label="営業時間">
+        木〜月 10:30–18:00 ／ 火・水 定休
+      </div>
+
+    </div><!-- /.hr-container -->
+
+    <!-- ドロワーナビ（〜959px） -->
+    <div id="hr-drawer" class="hr-drawer" hidden>
+      <div class="hr-container">
+        <nav aria-label="ドロワーナビゲーション">
+          <ul class="hr-drawer__list" role="list">
+            <li><a href="./"            class="hr-drawer__link" aria-current="page">ホーム</a></li>
+            <li><a href="first-time/" class="hr-drawer__link">はじめての方へ</a></li>
+            <li><a href="news/"       class="hr-drawer__link">入荷情報</a></li>
+            <li><a href="calendar/"   class="hr-drawer__link">営業日</a></li>
+            <li><a href="access/"     class="hr-drawer__link">アクセス</a></li>
+            <li><a href="contact/"    class="hr-drawer__link">お問い合わせ</a></li>
+          </ul>
+          <div class="hr-drawer__cta">
+            <a href="contact/?type=buyback" class="hr-btn hr-btn--secondary">
+              買取を相談する
+            </a>
+          </div>
+        </nav>
+      </div>
+    </div><!-- /#hr-drawer -->
+
+  </header>
+
+  <!-- ============================================================
+       main
+       ============================================================ -->
+  <main id="main" tabindex="-1">
+
+    <!-- HERO（案J: 波打つ溝） -->
+    <section class="hr-hero-j" id="hero" aria-label="メインビジュアル">
+      <div class="hr-hero-j__fallback" aria-hidden="true"></div>
+      <canvas id="c" aria-hidden="true"></canvas>
+
+      <div class="hr-hero-j__content">
+        <span id="hr-status-badge" class="hr-badge" hidden aria-live="polite"></span>
+        <h1 class="hr-hero-j__catch" aria-label="欲しい1枚に ここで出会う。">
+          <span aria-hidden="true">欲しい1枚に</span><span class="l2" aria-hidden="true">ここで出会う。</span>
+        </h1>
+        <p class="hr-hero-j__sub">
+          <span class="ln"><span class="ch">夢見市・夢見通りの2階にある、</span><span class="ch">オールジャンルの中古レコード店。</span></span>
+          <span class="ln">試聴しながら、ゆっくり探してください。</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         3. ABOUT（CONTENTS.md 3章）
+         ============================================================ -->
+    <section class="hr-section hr-about" id="about" aria-labelledby="about-heading">
+      <div class="hr-container hr-fade-in">
+        <span class="hr-section-label" aria-hidden="true">✦ ABOUT</span>
+        <h2 id="about-heading" class="hr-section-heading">見るだけでも、ふらっとどうぞ。</h2>
+        <div class="hr-about__body">
+          <p>2024年11月、夢見市の夢見通りに開いた中古レコード店です。通り沿いの建物の2階で、オールジャンルのアナログレコードを販売・買取しています。</p>
+          <p>詳しくなくても大丈夫。気になったレコードはその場で試聴できますし、何を聴けばいいか迷ったら店主に気軽に声をかけてください。店頭の2枚100円コーナーから始めるのもおすすめです。</p>
+          <p>店名の「ほしぞらレコード」には、店主の名前と「レコードが欲しい」という気持ちを込めています。【要確認：由来の書き方を店主に確認】</p>
+        </div>
+        <ul class="hr-about__keywords" aria-label="キーワード">
+          <li>Used Vinyl</li>
+          <li>All Genres</li>
+          <li>Listening OK</li>
+          <li>Kawagoe</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         4. FEATURES（CONTENTS.md 4章）
+         ============================================================ -->
+    <section class="hr-section hr-section--kinari hr-features" id="features" aria-labelledby="features-heading">
+      <div class="hr-container">
+        <span class="hr-section-label" aria-hidden="true">✦ FEATURES</span>
+        <h2 id="features-heading" class="hr-section-heading">ほしぞらレコードの3つの特徴</h2>
+        <ul class="hr-features__list">
+
+          <li class="hr-features__item hr-fade-in">
+            <div class="hr-features__img">
+              <img
+                src="images/feature-listening.webp"
+                srcset="images/feature-listening-sm.webp 800w, images/feature-listening.webp 1600w"
+                sizes="(max-width: 599px) calc(100vw - 32px), (max-width: 959px) calc(100vw - 48px), 320px"
+                width="1600" height="1066"
+                alt="レコードに針を落としたプレーヤーの手元"
+                loading="lazy">
+            </div>
+            <div class="hr-features__body">
+              <span class="hr-features__num">01</span>
+              <h3>オールジャンル、全部試聴OK</h3>
+              <p>ロック、ジャズ、ソウル、邦楽まで幅広く揃えています。気になった一枚は、買う前にその場で聴けます。【要確認：主な取り扱いジャンル】</p>
+            </div>
+          </li>
+
+          <li class="hr-features__item hr-fade-in">
+            <div class="hr-features__img hr-features__img--portrait">
+              <img
+                src="images/feature-100yen.webp"
+                srcset="images/feature-100yen-sm.webp 533w, images/feature-100yen.webp 1066w"
+                sizes="(max-width: 599px) calc(100vw - 32px), (max-width: 959px) calc(100vw - 48px), 320px"
+                width="1066" height="1600"
+                alt="木の箱に立てて並べられた中古レコード"
+                loading="lazy">
+            </div>
+            <div class="hr-features__body">
+              <span class="hr-features__num">02</span>
+              <h3>初めてでも入りやすい</h3>
+              <p>見るだけでも大歓迎。2枚100円コーナーもあるので、レコードを始めたい人も気軽に手に取れます。</p>
+            </div>
+          </li>
+
+          <li class="hr-features__item hr-fade-in">
+            <div class="hr-features__img">
+              <img
+                src="images/feature-player.webp"
+                srcset="images/feature-player-sm.webp 612w, images/feature-player.webp 612w"
+                sizes="(max-width: 599px) calc(100vw - 32px), (max-width: 959px) calc(100vw - 48px), 320px"
+                width="612" height="367"
+                alt="白いトートバッグ"
+                loading="lazy">
+            </div>
+            <div class="hr-features__body">
+              <span class="hr-features__num">03</span>
+              <h3>プレーヤーもバッグも揃う</h3>
+              <p>レコードプレーヤーや持ち運び用のバッグも販売しています。買ったその日から聴き始められます。</p>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         5. NEW ARRIVALS（CONTENTS.md 5章）
+         ============================================================ -->
+    <section class="hr-section hr-arrivals" id="news" aria-labelledby="arrivals-heading">
+      <div class="hr-container">
+        <span class="hr-section-label" aria-hidden="true">✦ NEW ARRIVALS</span>
+        <h2 id="arrivals-heading" class="hr-section-heading">新着入荷</h2>
+        <p class="hr-arrivals__note">売り切れの場合があります。在庫は店頭またはお問い合わせでご確認ください。</p>
+
+        <ul class="hr-arrivals__grid" role="list">
+
+          <li>
+            <a href="news/demo-01/" class="hr-card">
+              <div class="hr-card__img-wrap">
+                <img
+                  src="images/demo/arrival-01.webp"
+                  srcset="images/demo/arrival-01-sm.webp 400w, images/demo/arrival-01.webp 800w"
+                  sizes="(max-width: 599px) calc((100vw - 48px) / 2), (max-width: 959px) calc((100vw - 64px) / 2), 324px"
+                  width="800" height="800"
+                  alt="雲と青空に溶けこむ少年のジャケット。デモ用の架空のレコード"
+                  loading="lazy">
+                <img class="hr-card__vinyl"
+                     src="images/demo/arrival-01-disc.webp"
+                     srcset="images/demo/arrival-01-disc-sm.webp 400w, images/demo/arrival-01-disc.webp 800w"
+                     sizes="(max-width: 599px) calc((100vw - 48px) / 2), (max-width: 959px) calc((100vw - 64px) / 2), 324px"
+                     alt="" loading="lazy" aria-hidden="true">
+                <span class="hr-card__demo-badge" aria-label="デモデータ">デモ</span>
+              </div>
+              <div class="hr-card__body">
+                <span class="hr-card__genre">ROCK</span>
+                <span class="hr-card__artist">The Midnight Club</span>
+                <span class="hr-card__title">Dreams in Blue</span>
+                <div class="hr-card__footer">
+                  <span class="hr-card__price hr-price">¥2,800</span>
+                  <span class="hr-tag hr-tag--rare">レア盤</span>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="news/demo-02/" class="hr-card">
+              <div class="hr-card__img-wrap">
+                <img
+                  src="images/demo/arrival-02.webp"
+                  srcset="images/demo/arrival-02-sm.webp 400w, images/demo/arrival-02.webp 800w"
+                  sizes="(max-width: 599px) calc((100vw - 48px) / 2), (max-width: 959px) calc((100vw - 64px) / 2), 324px"
+                  width="800" height="800"
+                  alt="夜空に満ち欠けする月が並ぶジャケット。デモ用の架空のレコード"
+                  loading="lazy">
+                <img class="hr-card__vinyl"
+                     src="images/demo/arrival-02-disc.webp"
+                     srcset="images/demo/arrival-02-disc-sm.webp 400w, images/demo/arrival-02-disc.webp 800w"
+                     sizes="(max-width: 599px) calc((100vw - 48px) / 2), (max-width: 959px) calc((100vw - 64px) / 2), 324px"
+                     alt="" loading="lazy" aria-hidden="true">
+                <span class="hr-card__demo-badge" aria-label="デモデータ">デモ</span>
+              </div>
+              <div class="hr-card__body">
+                <span class="hr-card__genre">JAZZ</span>
+                <span class="hr-card__artist">Lunar Phases</span>
+                <span class="hr-card__title">Lunar Phases</span>
+                <div class="hr-card__footer">
+                  <span class="hr-card__price hr-price">¥3,200</span>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="news/demo-03/" class="hr-card">
+              <div class="hr-card__img-wrap">
+                <img
+                  src="images/demo/arrival-03.webp"
+                  srcset="images/demo/arrival-03-sm.webp 400w, images/demo/arrival-03.webp 800w"
+                  sizes="(max-width: 599px) calc((100vw - 48px) / 2), (max-width: 959px) calc((100vw - 64px) / 2), 324px"
+                  width="800" height="800"
+                  alt="海に沈む大きな夕日のジャケット。デモ用の架空のレコード"
+                  loading="lazy">
+                <img class="hr-card__vinyl"
+                     src="images/demo/arrival-03-disc.webp"
+                     srcset="images/demo/arrival-03-disc-sm.webp 400w, images/demo/arrival-03-disc.webp 800w"
+                     sizes="(max-width: 599px) calc((100vw - 48px) / 2), (max-width: 959px) calc((100vw - 64px) / 2), 324px"
+                     alt="" loading="lazy" aria-hidden="true">
+                <span class="hr-card__demo-badge" aria-label="デモデータ">デモ</span>
+              </div>
+              <div class="hr-card__body">
+                <span class="hr-card__genre">SOUL</span>
+                <span class="hr-card__artist">Solar Echoes</span>
+                <span class="hr-card__title">Solar Echoes</span>
+                <div class="hr-card__footer">
+                  <span class="hr-card__price hr-price">¥2,400</span>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="news/demo-04/" class="hr-card">
+              <div class="hr-card__img-wrap">
+                <img
+                  src="images/demo/arrival-04.webp"
+                  srcset="images/demo/arrival-04-sm.webp 400w, images/demo/arrival-04.webp 800w"
+                  sizes="(max-width: 599px) calc((100vw - 48px) / 2), (max-width: 959px) calc((100vw - 64px) / 2), 324px"
+                  width="800" height="800"
+                  alt="緑の背景に白い花が咲くジャケット。デモ用の架空のレコード"
+                  loading="lazy">
+                <img class="hr-card__vinyl"
+                     src="images/demo/arrival-04-disc.webp"
+                     srcset="images/demo/arrival-04-disc-sm.webp 400w, images/demo/arrival-04-disc.webp 800w"
+                     sizes="(max-width: 599px) calc((100vw - 48px) / 2), (max-width: 959px) calc((100vw - 64px) / 2), 324px"
+                     alt="" loading="lazy" aria-hidden="true">
+                <span class="hr-card__demo-badge" aria-label="デモデータ">デモ</span>
+              </div>
+              <div class="hr-card__body">
+                <span class="hr-card__genre">FOLK</span>
+                <span class="hr-card__artist">The Green Hours</span>
+                <span class="hr-card__title">The Green Hours</span>
+                <div class="hr-card__footer">
+                  <span class="hr-card__price hr-price">¥1,800</span>
+                  <span class="hr-tag">まとめて入荷</span>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="news/demo-05/" class="hr-card">
+              <div class="hr-card__img-wrap">
+                <img
+                  src="images/demo/arrival-05.webp"
+                  srcset="images/demo/arrival-05-sm.webp 400w, images/demo/arrival-05.webp 800w"
+                  sizes="(max-width: 599px) calc((100vw - 48px) / 2), (max-width: 959px) calc((100vw - 64px) / 2), 324px"
+                  width="800" height="800"
+                  alt="ヤシの木と青い海のジャケット。デモ用の架空のレコード"
+                  loading="lazy">
+                <img class="hr-card__vinyl"
+                     src="images/demo/arrival-05-disc.webp"
+                     srcset="images/demo/arrival-05-disc-sm.webp 400w, images/demo/arrival-05-disc.webp 800w"
+                     sizes="(max-width: 599px) calc((100vw - 48px) / 2), (max-width: 959px) calc((100vw - 64px) / 2), 324px"
+                     alt="" loading="lazy" aria-hidden="true">
+                <span class="hr-card__demo-badge" aria-label="デモデータ">デモ</span>
+              </div>
+              <div class="hr-card__body">
+                <span class="hr-card__genre">CITY POP</span>
+                <span class="hr-card__artist">Sea Breeze</span>
+                <span class="hr-card__title">Sea Breeze</span>
+                <div class="hr-card__footer">
+                  <span class="hr-card__price hr-price">¥4,500</span>
+                  <span class="hr-tag hr-tag--rare">レア盤</span>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="news/demo-06/" class="hr-card">
+              <div class="hr-card__img-wrap">
+                <img
+                  src="images/demo/arrival-06.webp"
+                  srcset="images/demo/arrival-06-sm.webp 400w, images/demo/arrival-06.webp 800w"
+                  sizes="(max-width: 599px) calc((100vw - 48px) / 2), (max-width: 959px) calc((100vw - 64px) / 2), 324px"
+                  width="800" height="800"
+                  alt="朱や紫のうねる模様のジャケット。デモ用の架空のレコード"
+                  loading="lazy">
+                <img class="hr-card__vinyl"
+                     src="images/demo/arrival-06-disc.webp"
+                     srcset="images/demo/arrival-06-disc-sm.webp 400w, images/demo/arrival-06-disc.webp 800w"
+                     sizes="(max-width: 599px) calc((100vw - 48px) / 2), (max-width: 959px) calc((100vw - 64px) / 2), 324px"
+                     alt="" loading="lazy" aria-hidden="true">
+                <span class="hr-card__demo-badge" aria-label="デモデータ">デモ</span>
+              </div>
+              <div class="hr-card__body">
+                <span class="hr-card__genre">PSYCHE</span>
+                <span class="hr-card__artist">Good Times</span>
+                <span class="hr-card__title">Good Times</span>
+                <div class="hr-card__footer">
+                  <span class="hr-card__price hr-price">¥2,000</span>
+                </div>
+              </div>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="hr-arrivals__footer">
+          <a href="news/" class="hr-btn hr-btn--secondary">入荷情報をもっと見る</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         6. FIRST TIME バナー（CONTENTS.md 6章）
+         ============================================================ -->
+    <section class="hr-section hr-section--kinari hr-first-banner" id="first-time" aria-labelledby="first-banner-heading">
+      <div class="hr-container">
+        <div class="hr-first-banner__inner hr-fade-in">
+          <span class="hr-section-label" aria-hidden="true">✦ FIRST TIME</span>
+          <h2 id="first-banner-heading">レコード、はじめてでも大丈夫。</h2>
+          <p>プレーヤーの選び方から、レコードの扱い方まで。はじめての一枚を選ぶヒントをまとめました。</p>
+          <a href="first-time/" class="hr-btn hr-btn--primary">はじめての方へ</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         7. BUYBACK（CONTENTS.md 7章）
+         ============================================================ -->
+    <section class="hr-section hr-buyback" id="buyback" aria-labelledby="buyback-heading">
+      <div class="hr-container">
+        <span class="hr-section-label" aria-hidden="true">✦ BUYBACK</span>
+        <h2 id="buyback-heading" class="hr-section-heading">ご自宅に眠るレコード、買い取ります。</h2>
+        <div class="hr-buyback__intro hr-fade-in">
+          <p>ジャンルを問わず、中古のアナログレコードを査定します。買取は事前のご連絡をお願いしています。写真を送っていただければ、おおよその見込みもお伝えできます。【要確認：最低枚数の有無、写真での事前の見込み対応、出張・宅配買取の有無】</p>
+        </div>
+        <ol class="hr-buyback__steps" role="list">
+
+          <li class="hr-step hr-fade-in">
+            <span class="hr-step__num" aria-hidden="true">01</span>
+            <div class="hr-step__body">
+              <h3>ご相談</h3>
+              <p>フォーム、メール、電話でご連絡ください。枚数やジャンル、写真があるとスムーズです。</p>
+              <div class="hr-step__img">
+                <img
+                  src="images/buyback-consult.webp"
+                  srcset="images/buyback-consult-sm.webp 400w, images/buyback-consult.webp 500w"
+                  sizes="(max-width: 599px) calc(100vw - 96px), (max-width: 959px) calc(100vw - 112px), 320px"
+                  width="500" height="375"
+                  alt="すき間なく立てて並べられた中古レコード"
+                  loading="lazy">
+              </div>
+            </div>
+          </li>
+
+          <li class="hr-step hr-fade-in">
+            <span class="hr-step__num" aria-hidden="true">02</span>
+            <div class="hr-step__body">
+              <h3>査定</h3>
+              <p>レコードをお店にお持ちいただき、1枚ずつ状態を確認して査定します。</p>
+              <div class="hr-step__img">
+                <img
+                  src="images/buyback-check.webp"
+                  srcset="images/buyback-check-sm.webp 400w, images/buyback-check.webp 500w"
+                  sizes="(max-width: 599px) calc(100vw - 96px), (max-width: 959px) calc(100vw - 112px), 320px"
+                  width="500" height="375"
+                  alt="両手でレコードを持ち、盤面を確かめる手元"
+                  loading="lazy">
+              </div>
+            </div>
+          </li>
+
+          <li class="hr-step hr-fade-in">
+            <span class="hr-step__num" aria-hidden="true">03</span>
+            <div class="hr-step__body">
+              <h3>お支払い</h3>
+              <p>金額にご納得いただけたら、お支払いします。本人確認書類をお持ちください。【要確認：支払いの方法とタイミング】</p>
+              <div class="hr-step__img">
+                <img
+                  src="images/buyback-payment.webp"
+                  srcset="images/buyback-payment-sm.webp 400w, images/buyback-payment.webp 444w"
+                  sizes="(max-width: 599px) calc(100vw - 96px), (max-width: 959px) calc(100vw - 112px), 320px"
+                  width="444" height="333"
+                  alt="書類にペンで記入する手元"
+                  loading="lazy">
+              </div>
+            </div>
+          </li>
+
+        </ol>
+        <div class="hr-buyback__actions">
+          <a href="contact/?type=buyback" class="hr-btn hr-btn--primary">買取を相談する</a>
+          <a href="buyback/" class="hr-btn--text">買取について詳しく見る</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         8. VOICES（CONTENTS.md 8章）
+         ============================================================ -->
+    <section class="hr-section hr-section--kinari hr-voices" id="voices" aria-labelledby="voices-heading">
+      <div class="hr-container">
+        <span class="hr-section-label" aria-hidden="true">✦ VOICES</span>
+        <h2 id="voices-heading" class="hr-section-heading">お客様の声</h2>
+        <ul class="hr-voices__grid" role="list">
+
+          <li class="hr-voice-card hr-fade-in">
+            <span class="hr-voice-card__name">
+              30代・夢見市観光で来店
+              <span class="hr-voice-card__demo">デモ</span>
+            </span>
+            <p class="hr-voice-card__text">蔵造りの町並みを歩いたあとに寄りました。試聴させてもらいながら、店主さんおすすめの一枚を買って帰りました。</p>
+          </li>
+
+          <li class="hr-voice-card hr-fade-in">
+            <span class="hr-voice-card__name">
+              50代・市内在住
+              <span class="hr-voice-card__demo">デモ</span>
+            </span>
+            <p class="hr-voice-card__text">実家に残っていたレコードをまとめて買い取ってもらいました。1枚ずつ丁寧に見てくれて安心でした。</p>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         9. ACCESS（CONTENTS.md 9章）
+         ============================================================ -->
+    <section class="hr-section hr-access" id="access" aria-labelledby="access-heading">
+      <div class="hr-container">
+        <span class="hr-section-label" aria-hidden="true">✦ ACCESS</span>
+        <h2 id="access-heading" class="hr-section-heading">夢見通りの2階です</h2>
+        <div class="hr-access__inner">
+
+          <div class="hr-access__info-block hr-fade-in">
+            <table class="hr-access__info-table">
+              <tbody>
+                <tr><th scope="row">店名</th><td>ほしぞらレコード</td></tr>
+                <tr><th scope="row">住所</th><td>〒000-0000 架空県夢見市小江戸町1-2-3 夢見通りビル 2階</td></tr>
+                <tr><th scope="row">営業時間</th><td>10:30–18:00</td></tr>
+                <tr><th scope="row">定休日</th><td>火曜日・水曜日</td></tr>
+                <tr><th scope="row">電話</th><td><a href="tel:00000000000">000-0000-0000</a></td></tr>
+                <tr><th scope="row">メール</th><td><a href="mailto:info@example.com">info@example.com</a></td></tr>
+                <tr><th scope="row">支払い</th><td>【要確認：現金・カード・電子マネー】</td></tr>
+                <tr><th scope="row">最寄り駅</th><td>西武新宿線 夢見駅から徒歩約9分</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="hr-access__how-block hr-fade-in">
+            <span class="hr-access__how-label">行き方（3ステップ）</span>
+            <ol class="hr-access__steps" role="list">
+              <li class="hr-access-step">
+                <div class="hr-access-step__img">
+                  <span class="hr-access-step__num" aria-hidden="true">1</span>
+                  <img
+                    src="images/access-01.webp"
+                    srcset="images/access-01-sm.webp 800w, images/access-01.webp 1448w"
+                    sizes="(max-width: 599px) calc(100vw - 32px), (max-width: 959px) calc((100vw - 96px) / 3), 150px"
+                    width="1448" height="1086"
+                    alt="1階にジュエリー店が入る建物の外観"
+                    loading="lazy">
+                </div>
+                <p class="hr-access-step__desc">夢見通り沿い、1階が「1階が雑貨店の建物」の建物が目印です。</p>
+              </li>
+              <li class="hr-access-step">
+                <div class="hr-access-step__img hr-access-step__img--portrait">
+                  <span class="hr-access-step__num" aria-hidden="true">2</span>
+                  <img
+                    src="images/access-02.webp"
+                    srcset="images/access-02-sm.webp 600w, images/access-02.webp 1086w"
+                    sizes="(max-width: 599px) calc(100vw - 32px), (max-width: 959px) calc((100vw - 96px) / 3), 150px"
+                    width="1086" height="1448"
+                    alt="建物の奥にある階段とエレベーター"
+                    loading="lazy">
+                </div>
+                <p class="hr-access-step__desc">お店の脇の通路を奥へ進むと、階段とエレベーターがあります。</p>
+              </li>
+              <li class="hr-access-step">
+                <div class="hr-access-step__img">
+                  <span class="hr-access-step__num" aria-hidden="true">3</span>
+                  <img
+                    src="images/access-03.webp"
+                    srcset="images/access-03-sm.webp 800w, images/access-03.webp 1448w"
+                    sizes="(max-width: 599px) calc(100vw - 32px), (max-width: 959px) calc((100vw - 96px) / 3), 150px"
+                    width="1448" height="1086"
+                    alt="2階にあるほしぞらレコードの入口"
+                    loading="lazy">
+                </div>
+                <p class="hr-access-step__desc">2階に上がるとほしぞらレコードの入口です。</p>
+              </li>
+            </ol>
+          </div>
+
+          <div class="hr-access__map-block hr-fade-in">
+            <div class="hr-access__map">
+              <iframe
+                src="https://www.openstreetmap.org/export/embed.html?bbox=139.4747%2C35.9154%2C139.4947%2C35.9354&amp;layer=mapnik&amp;marker=35.9254%2C139.4847"
+                title="夢見駅付近のイメージ地図"
+                loading="lazy"
+                allowfullscreen="">
+              </iframe>
+            </div>
+            <p class="hr-access__map-address">〒000-0000 架空県夢見市小江戸町1-2-3 夢見通りビル 2階</p>
+          </div>
+
+          <div class="hr-access__footer">
+            <a href="access/" class="hr-btn hr-btn--secondary">行き方をくわしく見る</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         10. Instagram（CONTENTS.md 10章）
+         ============================================================ -->
+    <section class="hr-section hr-instagram" id="media" aria-labelledby="instagram-heading">
+      <div class="hr-container">
+        <h2 id="instagram-heading" class="hr-section-heading">Instagram</h2>
+        <p class="hr-instagram__link hr-fade-in">
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+             aria-label="Instagram @hoshizora_records（新しいタブで開く）">
+            @hoshizora_records
+          </a>
+        </p>
+        <p class="hr-instagram__caption">入荷したレコードやお店の様子を発信しています。<br>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">@hoshizora_records</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         11. お問い合わせ（CONTENTS.md 11章）
+         ============================================================ -->
+    <section class="hr-section hr-section--kinari hr-contact-cta" id="contact" aria-labelledby="contact-cta-heading">
+      <div class="hr-container">
+        <div class="hr-contact-cta__inner hr-fade-in">
+          <h2 id="contact-cta-heading">在庫の確認、買取のご相談はお気軽に</h2>
+          <p>ご返信まで1〜2営業日いただくことがあります。お急ぎの方はお電話ください。</p>
+          <div class="hr-contact-cta__actions">
+            <a href="contact/" class="hr-btn hr-btn--primary">お問い合わせ</a>
+            <a href="tel:00000000000" class="hr-contact-cta__tel" aria-label="電話する 000-0000-0000">電話する</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       12. フッター（CONTENTS.md 12章）
+       ============================================================ -->
+  <footer class="hr-footer" id="footer" role="contentinfo">
+    <div class="hr-container">
+      <div class="hr-footer__inner">
+
+        <!-- 左：ロゴ・店舗情報・SNS -->
+        <div class="hr-footer__brand">
+          <a href="./" class="hr-footer__logo-link" aria-label="ほしぞらレコード トップページへ">
+            <span class="hr-footer__logo-text">ほしぞらレコード</span>
+          </a>
+          <p class="hr-footer__info">
+            〒000-0000 架空県夢見市小江戸町1-2-3 夢見通りビル 2階<br>
+            木〜月 10:30–18:00（火・水定休）<br>
+            古物商許可：架空県公安委員会 許可 第000000000000号（架空）
+          </p>
+          <nav class="hr-footer__sns" aria-label="SNSリンク">
+            <a href="https://www.instagram.com/" class="hr-footer__sns-link"
+               target="_blank" rel="noopener noreferrer" aria-label="Instagram @hoshizora_records（新しいタブで開く）">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2"/>
+                <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+                <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
+              </svg>
+              Instagram
+            </a>
+          </nav>
+        </div>
+
+        <!-- 右：ナビ・買取リンク -->
+        <nav class="hr-footer__nav" aria-label="フッターナビゲーション">
+          <ul class="hr-footer__nav-list">
+            <li><a href="./">ホーム</a></li>
+            <li><a href="first-time/">はじめての方へ</a></li>
+            <li><a href="news/">入荷情報</a></li>
+            <li><a href="calendar/">営業日</a></li>
+            <li><a href="access/">アクセス</a></li>
+            <li><a href="contact/">お問い合わせ</a></li>
+          </ul>
+          <div>
+            <a href="contact/?type=buyback" class="hr-footer__buyback-link">買取を相談する</a>
+          </div>
+        </nav>
+
+      </div>
+
+      <!-- ボトム：デモ表記・法務リンク・コピーライト -->
+      <div class="hr-footer__bottom">
+        <p class="hr-footer__demo">このサイトは制作練習用のポートフォリオです。店舗・商品・お客様の声はすべて架空のものです。</p>
+        <div class="hr-footer__legal">
+          <a href="privacy-policy/">プライバシーポリシー</a>
+        </div>
+        <p class="hr-footer__copyright">© ほしぞらレコード</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       13. スマホ固定バー（CONTENTS.md 13章・〜599px）
+       ============================================================ -->
+  <nav class="hr-mobile-bar" aria-label="スマホ固定メニュー">
+    <a href="tel:00000000000" class="hr-mobile-bar__btn" aria-label="電話する 000-0000-0000">
+      <svg class="hr-mobile-bar__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C9.39 21 3 14.61 3 7c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.24 1.01L6.6 10.8z"/>
+      </svg>
+      電話する
+    </a>
+    <a href="access/" class="hr-mobile-bar__btn">
+      <svg class="hr-mobile-bar__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+      </svg>
+      行き方
+    </a>
+    <a href="contact/?type=buyback" class="hr-mobile-bar__btn hr-mobile-bar__btn--buyback">
+      <svg class="hr-mobile-bar__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/>
+      </svg>
+      買取相談
+    </a>
+  </nav>
+
+  <script defer src="assets/js/main.js"></script>
+  <script src="assets/js/hero-rings.js"></script>
+</body>
+</html>
